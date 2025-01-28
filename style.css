@@ -464,3 +464,71 @@ max-width: 1000px;
     gap: 1rem;
 
 }
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+    .navbar a {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 50vw;
+    }
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .header {
+        padding: 2.5rem 7%;
+    }
+    .navbar a {
+        font-size: 1.6rem;
+    }
+    .home-content h1 {
+        font-size: 6rem;
+    }
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium Devices (Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 3rem 8%;
+    }
+    .home-content h1 {
+        font-size: 6.5rem;
+    }
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#menu-icon {
+    display: block;
+}
+.navbar {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+.navbar.active {
+    display: flex;
+}
+.about {
+    flex-direction: column;
+    text-align: center;
+}
